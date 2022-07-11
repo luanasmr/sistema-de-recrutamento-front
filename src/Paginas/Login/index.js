@@ -1,10 +1,8 @@
 import { useState } from "react";
-
-import jpIMG from "./assets/jp.svg";
-
 import "./styles.css";
+import GTranslateIcon from '@material-ui/icons/GTranslate';
 
-function App() {
+function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -13,10 +11,13 @@ function App() {
       <div className="container-login">
         <div className="wrap-login">
           <form className="login-form">
-            <span className="login-form-title"> Bem vindo </span>
+            <span className="login-form-title"> Recrutamento Online </span>
+            <div className="text-center">
+              <span className="txt1">Bem vindo </span>
+            </div>
 
             <span className="login-form-title">
-              <img src={jpIMG} alt="Jovem Programador" />
+              {/* <img src={jpIMG} alt="logo" /> */}
             </span>
 
             <div className="wrap-input">
@@ -26,7 +27,7 @@ function App() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              <span className="focus-input" data-placeholder="Email"></span>
+              <span className="focus-input" data-placeholder="E-mail"></span>
             </div>
 
             <div className="wrap-input">
@@ -36,19 +37,24 @@ function App() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <span className="focus-input" data-placeholder="Password"></span>
+              <span className="focus-input" data-placeholder="Senha"></span>
             </div>
 
             <div className="container-login-form-btn">
               <button className="login-form-btn">Login</button>
             </div>
-
+            <div className="container-login-form-btn">
+              <button className="login-form-btn"> <GTranslateIcon></GTranslateIcon>logar com Google</button>
+            </div>
             <div className="text-center">
               <span className="txt1">Não possui conta? </span>
               <a className="txt2" href="#">
                 Criar conta
               </a>
             </div>
+            <div className="text-center">
+            <span className="txt1">Todos os direitos reservados @Luanaalvesrn</span>
+      </div>
           </form>
         </div>
       </div>
@@ -56,4 +62,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;
