@@ -1,11 +1,9 @@
+// import { Create } from "@material-ui/icons";
 import { useState } from "react";
-
-// import jpIMG from "./Img/jp.svg"; 
+import Header from "./Components/Header"
+import Create from "./Paginas/Admin/Empresa/create";
 
 import "./styles.css";
-import GTranslateIcon from '@material-ui/icons/GTranslate';
-import Login from "./Paginas/Login";
-import Header from "./Components/Header"
 
 function App() {
   const [email, setEmail] = useState("");
@@ -14,6 +12,7 @@ function App() {
   return (
     <>
     <Header/>
+    <Create/>
     </>
   );
 }

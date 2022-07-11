@@ -1,7 +1,7 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
-import Home from './pages/Home';
-import Config from './pages/Config';
+import Home from './Paginas/Home';
+import Empresa from './Paginas/Admin/Empresa';
 
 export default () => {
     return(
@@ -10,8 +10,8 @@ export default () => {
                <Home>Início</Home>
             </Route>
 
-            <Route exact path="/config">
-                <Config>Configuração</Config>
+            <Route exact path="/Empresa">
+                <Empresa>Empresas</Empresa>
             </Route>
 
             <Route exact path="/vagas">
