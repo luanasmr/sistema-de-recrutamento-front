@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-// import jpIMG from "./Img/jp.svg";
+// import jpIMG from "./Img/jp.svg"; 
 
 import "./styles.css";
 import GTranslateIcon from '@material-ui/icons/GTranslate';
